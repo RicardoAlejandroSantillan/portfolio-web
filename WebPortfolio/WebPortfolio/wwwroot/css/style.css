@@ -1,0 +1,469 @@
+﻿:root {
+    --fondo: #2b2b2d;
+    --panel: #1e1e1e;
+    --borde: #2c2c2c;
+    --texto: #d6c7b0;
+    --subtexto: #999;
+    --dorado: #d1a45d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--fondo);
+    color: var(--texto);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    color: var(--dorado);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin-bottom: 15px;
+    color: var(--dorado);
+}
+
+h3 {
+    color: var(--dorado);
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: var(--dorado);
+    margin-bottom: 5px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    color: var(--texto);
+    text-align: center;
+    justify-content: center;
+    height: 175px;
+    background-color: var(--fondo);
+    position: relative;
+    z-index: 10;
+}
+
+/* Wrapper principal que permite el efecto parallax */
+.page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    z-index: 5;
+    background-color: var(--fondo);
+    min-height: 100vh;
+    /* Margen bottom que permite ver el footer */
+    margin-bottom: 300px;
+}
+
+.section {
+    width: 75%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.panels {
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.Proyect-card {
+    box-shadow: 3px 5px rgba(209, 209, 209, 0.199);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+    .Proyect-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 10px 15px rgba(209, 209, 209, 0.28);
+    }
+
+.panel, .contact-panel {
+    padding: 20px;
+    background-color: var(--panel);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.input:focus {
+    background: var(--panel);
+}
+
+    .contact-panel h2 {
+        font-size: 1.5rem;
+        font-family: cursive;
+        margin-bottom: 15px;
+        color: var(--dorado);
+    }
+
+    .contact-panel form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name-label email-label"
+            "name-input email-input"
+            "company-label company-label"
+            "company-input company-input"
+            "message-label message-label"
+            "message-input message-input"
+            "submit-btn submit-btn";
+        gap: 15px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+.lbl-name {
+    grid-area: name-label;
+}
+
+.txt-name {
+    grid-area: name-input;
+}
+
+.lbl-mail {
+    grid-area: email-label;
+}
+
+.txt-mail {
+    grid-area: email-input;
+}
+
+.lbl-company {
+    grid-area: company-label;
+}
+
+.txt-company {
+    grid-area: company-input;
+}
+
+.lbl-message {
+    grid-area: message-label;
+}
+
+.txt-message {
+    grid-area: message-input;
+}
+
+.contact-panel button[type="submit"] {
+    grid-area: submit-btn;
+    justify-self: start;
+    width: auto;
+    padding: 10px 20px;
+    background-color: var(--dorado);
+    color: var(--panel);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .contact-panel button[type="submit"]:hover {
+        background-color: #b8924a;
+    }
+
+.contact-panel label {
+    color: var(--texto);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-panel input,
+.contact-panel textarea {
+    padding: 10px;
+    border: 1px solid var(--borde);
+    border-radius: 5px;
+    background-color: var(--panel);
+    color: var(--texto);
+    font-size: 14px;
+    width: 100%;
+}
+
+    .contact-panel input:focus,
+    .contact-panel textarea:focus {
+        outline: none;
+        border-color: var(--dorado);
+    }
+
+.contact-panel textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+    .contact-panel input::placeholder,
+    .contact-panel textarea::placeholder {
+        color: var(--subtexto);
+    }
+
+/* ============== Cards ============== */
+.Proyect-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Proyect-card {
+    background-color: var(--fondo);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+}
+
+.xp-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.xp-card {
+    background-color: var(--fondo);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+}
+
+    .xp-card p {
+        margin: 5px 0;
+        color: var(--subtexto);
+    }
+
+/* ============== FOOTER ============== */
+.reveal-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* Clip-path que se anima con el scroll */
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transition: clip-path 0.3s ease-out;
+}
+
+.reveal-footer {
+    animation: footerReveal 1s ease-out forwards;
+    animation-timeline: scroll(root);
+    animation-range: 80% 100%;
+}
+
+@keyframes footerReveal {
+    0% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+
+
+@supports not (animation-timeline: scroll()) {
+    .reveal-footer {
+        animation: none;
+        transform: translateY(100%);
+    }
+
+        .reveal-footer::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: transparent;
+        }
+    .page-wrapper:hover .reveal-footer {
+        transform: translateY(0);
+        transition: transform 0.5s ease-out;
+    }
+}
+
+.scroll-trigger {
+    position: absolute;
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    pointer-events: none;
+}
+
+    .scroll-trigger:hover ~ .reveal-footer {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.footer-section p {
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+    .footer-section ul li {
+        color: #bdc3c7;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+        .footer-section ul li:hover {
+            color: #3498db;
+        }
+
+.spacer {
+    height: 200vh;
+    background: linear-gradient(to bottom, var(--fondo) 0%, var(--fondo) 50%, transparent 100%);
+    position: relative;
+}
+
+    .spacer::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: transparent;
+    }
+
+    .spacer:hover ~ .reveal-footer {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+
+/* ============== Responsive ============== */
+@media (max-width: 768px) {
+    .panels {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-panel form {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name-label"
+            "name-input"
+            "email-label"
+            "email-input"
+            "company-label"
+            "company-input"
+            "message-label"
+            "message-input"
+            "submit-btn";
+    }
+
+    .container {
+        margin-bottom: 400px;
+    }
+
+    .reveal-footer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-panel {
+        padding: 15px;
+    }
+
+        .contact-panel form {
+            gap: 10px;
+        }
+
+        .contact-panel button[type="submit"] {
+            width: 100%;
+            justify-self: stretch;
+        }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .reveal-footer {
+        animation-duration: 0.8s;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@supports (animation-timeline: scroll()) {
+    .reveal-footer {
+        animation-timeline: scroll(root);
+        animation-range: 60% 90%;
+    }
+}
+
+.final-section {
+    position: relative;
+    height: 100vh;
+    background: var(--fondo);
+    z-index: 2;
+}
+
+    .final-section::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        transition: clip-path 0.5s ease-out;
+    }
+
+    .final-section:hover::after {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
