@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --fondo: #2b2b2d;
     --panel: #1e1e1e;
     --borde: #2c2c2c;
@@ -24,6 +24,25 @@ body {
     color: var(--texto);
     overflow-x: hidden;
 }
+
+a {
+    color: rgba(200, 200, 202, 0.63);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+    a:hover {
+        color: rgba(255, 255, 255);
+        background-color: rgba(142, 146, 199, 0.15);
+        transform: scale(1.2);
+        box-shadow: 0 2px 8px rgba(75, 77, 160, 0.3);
+        border-radius: 15px;
+        padding: 6px;
+    }
 
 h1 {
     font-size: 3rem;
@@ -68,13 +87,12 @@ h4 {
     min-height: 100vh;
 }
 
-/* Container principal */
+
 .container {
     position: relative;
     z-index: 5;
     background-color: var(--fondo);
     min-height: 100vh;
-    /* Margen bottom que permite ver el footer */
     margin-bottom: 300px;
 }
 
@@ -92,15 +110,25 @@ h4 {
     margin-bottom: 30px;
 }
 
-.Proyect-card {
+.Proyect-card, .xp-card {
+    background-color: var(--fondo);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
     box-shadow: 3px 5px rgba(209, 209, 209, 0.199);
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-    .Proyect-card:hover {
+    .Proyect-card:hover, .xp-card:hover {
+        background-color: #373738;
         transform: translateY(-7px);
         box-shadow: 10px 15px rgba(209, 209, 209, 0.28);
+    }
+
+    .xp-card p {
+        margin: 5px 0;
+        color: var(--subtexto);
     }
 
 .panel, .contact-panel {
@@ -121,29 +149,29 @@ h4 {
     background: var(--panel);
 }
 
-    .contact-panel h2 {
-        font-size: 1.5rem;
-        font-family: cursive;
-        margin-bottom: 15px;
-        color: var(--dorado);
-    }
+.contact-panel h2 {
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin-bottom: 15px;
+    color: var(--dorado);
+}
 
-    .contact-panel form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "name-label email-label"
-            "name-input email-input"
-            "company-label company-label"
-            "company-input company-input"
-            "message-label message-label"
-            "message-input message-input"
-            "submit-btn submit-btn";
-        gap: 15px;
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.contact-panel form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "name-label email-label"
+        "name-input email-input"
+        "company-label company-label"
+        "company-input company-input"
+        "message-label message-label"
+        "message-input message-input"
+        "submit-btn submit-btn";
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .lbl-name {
     grid-area: name-label;
@@ -230,36 +258,11 @@ h4 {
     }
 
 /* ============== Cards ============== */
-.Proyect-cards {
+.Proyect-cards, .xp-cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
-.Proyect-card {
-    background-color: var(--fondo);
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid var(--borde);
-}
-
-.xp-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.xp-card {
-    background-color: var(--fondo);
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid var(--borde);
-}
-
-    .xp-card p {
-        margin: 5px 0;
-        color: var(--subtexto);
-    }
 
 /* ============== FOOTER ============== */
 .reveal-footer {
@@ -296,7 +299,6 @@ h4 {
     }
 }
 
-
 @supports not (animation-timeline: scroll()) {
     .reveal-footer {
         animation: none;
@@ -312,6 +314,7 @@ h4 {
             height: 1px;
             background: transparent;
         }
+
     .page-wrapper:hover .reveal-footer {
         transform: translateY(0);
         transition: transform 0.5s ease-out;
@@ -353,18 +356,28 @@ h4 {
 
 .footer-section ul {
     list-style: none;
+    padding: 0;
 }
 
-    .footer-section ul li {
-        color: #bdc3c7;
-        margin-bottom: 0.5rem;
-        cursor: pointer;
-        transition: color 0.3s ease;
-    }
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
 
-        .footer-section ul li:hover {
-            color: #3498db;
-        }
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+    .footer-section a:hover {
+        color: #3498db;
+        background-color: rgba(52, 152, 219, 0.1);
+        transform: scale(1.05) translateX(5px);
+    }
 
 .spacer {
     height: 200vh;
@@ -429,7 +442,6 @@ h4 {
             justify-self: stretch;
         }
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
     .reveal-footer {
