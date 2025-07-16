@@ -14,30 +14,31 @@
                         sin depender de servicios externos.</p>
                 </div>
 
+                <!-- Projects Section -->
                 <div class="panel">
                     <h2>Proyectos</h2>
 
                     <div class="Proyect-cards">
-                        <div class="Proyect-card card">
+                        <div class="Proyect-card card" data-project="Overtime-Request">
                             <h3>Overtime Request</h3>
                             <p>Soporte y mantenimiento a la app de Recursos Humanos para gestión de horas extra en Daikin.</p>
                         </div>
 
-                        <div class="Proyect-card card">
+                        <div class="Proyect-card card" data-project="Etiquetas">
                             <h3>Etiquetas (Warehouse)</h3>
                             <p>Generador de etiquetas para piezas basado en datos del ERP Oracle; desarrollado en C# 
                                 con conexión directa a API interna.
                             </p>
                         </div>
 
-                        <div class="Proyect-card card">
+                        <div class="Proyect-card card" data-project="Portafolio-Web">
                             <h3>Portfolio Web Personal</h3>
                             <p>aplicacion web .NET C# con diseño obscuro minimalista y secciones dinámicas
                                 para mostrar proyectos, experiencia, y contacto.
                             </p>
                         </div>
 
-                        <div class="Proyect-card card">
+                        <div class="Proyect-card card" data-project="Placas">
                             <h3>Placas</h3>
                             <p>
                                 Proyecto escolar realizado con PHP y XAMPP para el registro de infracciones en automoviles. 
@@ -47,6 +48,7 @@
                 </div>
             </section>
 
+            <!-- Skills Section -->
             <section class="panels">
                 <div class="panel">
                     <h2>Habilidades</h2>
@@ -65,29 +67,30 @@
                     </p>
                 </div>
 
+                <!-- Experience Section -->
                 <div class="panel">
                     <h2>Experiencia / Educación</h2>
 
                     <div class="xp-cards">
-                        <div class="xp-card">
+                        <div class="xp-card" data-project="Daikin">
                             <h4>Daikin Manufacturing Mexico S.A de C.V.</h4>
                             <p>09/2024 - Presente</p>
                             <p>IT Trainee</p>
                         </div>
 
-                        <div class="xp-card">
+                        <div class="xp-card" data-project="College">
                             <h4>Ingenieria en Tecnologias de la Información</h4>
                             <p>05/2022 - 09/2025</p>
                             <p>Universidad Tangamanga</p>
                         </div>
 
-                        <div class="xp-card">
+                        <div class="xp-card" data-project="Smart-Teaching">
                             <h4>Smart Teaching</h4>
                             <p>05/2025 - 11/2025</p>
                             <p>Preparacion para TOEFL test B2</p>
                         </div>
 
-                        <div class="xp-card">
+                        <div class="xp-card" data-project="Office-Certificate">
                             <h4>Microsoft Office Specialist</h4>
                             <p>2020</p>
                             <p>Certificación MOS para la paquetería de Office (Power Point, Word, Excel)</p>
@@ -96,6 +99,9 @@
                 </div>
             </section>
 
+
+
+            <!-- Contact Section -->
             <section class="panel contact-panel">
                 <h2>Contacto</h2>
                 <form action="#" method="post">
@@ -112,7 +118,7 @@
 
                     <label for="message" class="lbl-message">Mensaje</label>
                     <textarea id="message" class="txt-message" name="message"
-                        placeholder="¿En que te puedo ayudar?" required></textarea>
+                        placeholder="¿Cómo te puedo ayudar?" required></textarea>
 
                     <button type="submit">Enviar Mensaje</button>
                 </form>
@@ -121,6 +127,20 @@
 
     </main>
 </div>
+
+<!-- Modal Section -->
+
+<div class="modal-overlay" id="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-title">Titulo</h2>
+            <button class="close-btn" id="close-modal">&times;</button>
+        </div>
+
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
 
 <!-- Scroll trigger invisible -->
 <div class="scroll-trigger"></div>

@@ -1,0 +1,37 @@
+# Archivos y carpetas generadas por Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.ide
+
+# Salidas de compilación
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.app
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Archivos de publicación
+publish/
+*.publish.xml
+
+# Archivos generados por paquetes NuGet
+packages/
+*.nupkg
+
+# Archivos de configuración local
+appsettings.Development.json
+
+# Archivos de depuración
+*.vscode/
+launchSettings.json
+
+# Archivos específicos de sistema
+Thumbs.db
+.DS_Store
