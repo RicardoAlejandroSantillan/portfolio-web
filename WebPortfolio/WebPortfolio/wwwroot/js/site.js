@@ -102,11 +102,11 @@
     'Placas': {
         title: 'PLACAS',
         content: `
-        <h4>Sistema de Multas en Placas</h4>
-        Aplicación escolar de registro de placas en automoviles para la materia de programacion de base de datos.
-        La aplicacion permite realizar un CRUD en la base de datos MySQL.
+            <h4>Sistema de Multas en Placas</h4>
+            Aplicación escolar de registro de placas en automoviles para la materia de programacion de base de datos.
+            La aplicacion permite realizar un CRUD en la base de datos MySQL.
 
-        <h4>Características Principales</h4>
+            <h4>Características Principales</h4>
             <ul>
                 <li>Pagina web desarrollada completamente en PHP</li>
                 <li>Hace correctamente todo el proceso del CRUD e implementa una UX intuitiva</li>
@@ -122,6 +122,36 @@
 
             <h4>Duración del Proyecto</h4>
             <p>2 Meses</p>
+        `
+    },
+
+    'Spa-Project': {
+        title: 'Spa Project',
+        content: `
+            <h3>SPA Zahara responsive</h3>
+            <p>
+                Una pagina web con la que se practico el responsive en diferentes dispositivos, ademas de el diseño UX/UI
+                y buenas practicas en diseño inicial en el desarrollo de una web.
+            </p>
+
+        <h4>Características Principales</h4>
+            <ul>
+                <li>Alojada en Github Pages</li>
+                <li>Pagina web desarrollada diseñada para ser esteticamente atractiva</li>
+                <li>implementacion principalmente de CSS</li>
+                <li>Simulación de una landing page para un SPA</li>
+            </ul>
+
+            <h4>Tecnologías Utilizadas</h4>
+            <ul>
+                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
+            </ul>
+
+            <h4>Duración del Proyecto</h4>
+            <p>3 Semanas</p>
+
+            <h4>Visita la pagina</h4>
+            <p><a href="https://ricardoalejandrosantillan.github.io/spaPage/index.html">Click aqui</a> para visitar la pagina del Spa</p>
         `
     },
 
