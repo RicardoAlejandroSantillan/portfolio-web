@@ -7,6 +7,13 @@
             <p>Aplicación de apoyo para el área de Recursos Humanos que permite calcular costos en tiempos extra de empleados de planta. 
             <span style="color: #bdc3c7;">OvertimeRequest</span> calcula los costos de comidas, transporte,
             salario y gestiona las paradas de los camiones.</p>
+
+            <div style="display: flex; flex-direction: columns; width: 90%; height: 150px; margin: 20px auto 0 auto; gap: 2%;">
+                <div style="background-color: grey; width: 47%; height: 100%; border-radius: 10px;
+                    cursor: pointer;"></div>
+                <div style="background-color: grey; image-repeat: no-repeat; width: 47%; height: 100%; border-radius: 10px;
+                    cursor: pointer;"></div>
+            </div>
             
             <h4>Características Principales</h4>
             <ul>
@@ -18,6 +25,9 @@
                 <li>Reportes automáticos de costos por departamento</li>
                 <li>Envia actualizaciones automaticas al correo electronico</li>
             </ul>
+
+            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
             
             <h4>Tecnologías Utilizadas</h4>
             <ul>
@@ -28,6 +38,8 @@
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Base de Datos:</span> SQL Server</li>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Autenticación:</span> SSO (Single Sign-On)</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
             
             <h4>Duración del Proyecto</h4>
             <p>1 año de desarrollo, del cual aporté al mantenimiento durante 3 meses en Daikin Manufacturing Mexico</p>
@@ -53,6 +65,9 @@
                 <li>En caso de requerirse, los margenes y la impresora asi como las tipografias, se pueden editar desde el .json</li>
             </ul>
 
+            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
+
             <h4>Tecnologías Usadas</h4>
             <ul>
                 <li>Aplicacion Windows C#</li>
@@ -61,6 +76,8 @@
                 <li>Conección con API para consulta de Queries</li>
                 <li>Archivos .JSON</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
 
             <h4>Duración del Proyecto</h4>
             <p>De 2 a 3 Semanas</p>
@@ -77,6 +94,9 @@
             manejadas hasta el momento, tecnologias dominadas y proyectos interesantes, ademas de la ruta de conocimientos
             y la trayectoria del desarrollador.
             </p>
+
+            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
             
             <h4>Características Principales</h4>
             <ul>
@@ -93,6 +113,8 @@
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Backend:</span> JavaScript</li>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
             
             <h4>Duración del Proyecto</h4>
             <p>1 Mes</p>
@@ -113,12 +135,17 @@
                 <li>Conecta a base de datos en XAMPP</li>
             </ul>
 
+            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
+
             <h4>Tecnologías Utilizadas</h4>
             <ul>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Backend:</span> PHP</li>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Base de Datos:</span> XAMPP (MySql)</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
 
             <h4>Duración del Proyecto</h4>
             <p>2 Meses</p>
@@ -134,7 +161,10 @@
                 y buenas practicas en diseño inicial en el desarrollo de una web.
             </p>
 
-        <h4>Características Principales</h4>
+            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
+
+            <h4>Características Principales</h4>
             <ul>
                 <li>Alojada en Github Pages</li>
                 <li>Pagina web desarrollada diseñada para ser esteticamente atractiva</li>
@@ -142,10 +172,19 @@
                 <li>Simulación de una landing page para un SPA</li>
             </ul>
 
+            <div style="display: flex; flex-direction: columns; width: 90%; height: 150px; margin: 20px auto 0 auto; gap: 2%;">
+                <div style="background-color: grey; width: 47%; height: 100%; border-radius: 10px;
+                    cursor: pointer;"></div>
+                <div style="background-color: grey; image-repeat: no-repeat; width: 47%; height: 100%; border-radius: 10px;
+                    cursor: pointer;"></div>
+            </div>
+
             <h4>Tecnologías Utilizadas</h4>
             <ul>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
 
             <h4>Duración del Proyecto</h4>
             <p>3 Semanas</p>
@@ -158,7 +197,12 @@
     'Daikin': {
         title: 'DAIKIN MANUFACTURING MEXICO',
         content: `
+
+            <div style="background-color: grey; width: 20%; height: 50px; border-radius: 10px;
+                cursor: pointer; margin: 10px auto 25px 50px;"></div>
+            
             <h3>IT Trainee</h3>
+
             <h4>Período</h4>
             <p><span style="color: #bdc3c7;">09/2024 - 09/2025</span></p>
             
@@ -183,6 +227,8 @@
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frameworks:</span> ASP.NET Core, MVC</li>
                 <li><span style="color: #bdc3c7; font-size: 1.2rem;">Herramientas:</span> Visual Studio, Git, Oracle SQL Developer</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de las tecnologias usadas-->
             
             <h4>Logros Destacados</h4>
             <ul>
@@ -300,6 +346,8 @@
                 <li>Automatización de tareas con macros básicas</li>
                 <li>Colaboración y revisión de documentos</li>
             </ul>
+
+            <!-- Aqui FALTA iconos de los programas usadas-->
             
             <h4>Aplicación Profesional</h4>
             <p>Esta certificación me ha permitido crear reportes técnicos, análisis de datos, 

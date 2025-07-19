@@ -111,6 +111,20 @@ h4 {
     margin-bottom: 30px;
 }
 
+.foto-profesional {
+    width: 100%;
+    height: 200px;
+    background-color: var(--borde);
+    /*background-image: image("foto_profesional.png"); */
+    /*background-repeat: no-repeat;*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--subtexto);
+}
+
 .Proyect-card, .xp-card {
     background-color: var(--fondo);
     padding: 15px;
