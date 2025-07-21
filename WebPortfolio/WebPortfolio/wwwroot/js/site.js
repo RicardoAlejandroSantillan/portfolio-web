@@ -1,4 +1,66 @@
 ﻿const projectsData = {
+    'Portafolio-Web': {
+        title: 'PORTAFOLIO WEB',
+        content: `
+            <h3>Portafolio de desarrollador</h3>
+            <h4>Descripción General</h4>
+            <p>
+            Aplicación web con diseño atractivo con el objetivo de mostrar a empresas y colaboradores las opciones de desarrollo
+            manejadas hasta el momento, tecnologias dominadas y proyectos interesantes, ademas de la ruta de conocimientos
+            y la trayectoria del desarrollador.
+            </p>
+
+            <div style="background-image: url('/src/Portfolio/portfolio.webp'); background-size: cover; width: 70%; height: 250px; border-radius: 10px;
+                cursor: pointer; margin: 25px auto 0 auto;"></div>
+            
+            <h4>Características Principales</h4>
+            <ul>
+                <li>Aplicacion web desarrollada en .NET 8</li>
+                <li>Muestra correctamente quien soy y en que proyectos he aportado</li>
+                <li>Usa interfaz atractiva, minimalista y obscura con animaciones atractivas</li>
+                <li>Opcion de crecimiento fácil a futuro </li>
+            </ul>
+            
+            <h4>Tecnologías Utilizadas</h4>
+            <ul>
+                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Proyecto:</span> .NET Core, .NET 8, Arquitectura
+                <span style="text-decoration: underline;">MVC</span></li>
+                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Backend:</span> JavaScript</li>
+                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
+            </ul>
+
+            <div style="width: 100%; height: 35px; display: flex;
+                flex-direction: row; gap: 2%; justify-content: center; ">
+
+                    <!-- HTML5 -->
+                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FF6B35" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                    </svg>
+
+                    <!-- CSS3 -->
+                    <svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#1572B6" d="M8.5 5l2.5 35.5L24 44l13-3.5L39.5 5z"/>
+                        <path fill="#33A9DC" d="M24 8v31.5l8.2-2.2 1.8-26.3z"/>
+                        <path fill="#FFFFFF" d="M33.1 13H24v4h4.9l-.3 4H24v4h4.4l-.3 4.5-4.1 1.4v4.2l7.9-2.6.7-11.5z"/>
+                        <path fill="#EBEBEB" d="M24 13v4h-5l-.3-4zm-5.5 9l.2 4H24v-4zm.4 6h-4l.3 5.5 7.9 2.6v-4.2l-4.1-1.4z"/>
+                    </svg>
+
+                    <!-- JavaScript -->
+                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                    </svg>
+
+                    <!-- GitHub -->
+                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFFFFF" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+            </div>
+            
+            <h4>Duración del Proyecto</h4>
+            <p>1 Mes</p>
+        `
+    },
+
     'Overtime-Request': {
         title: 'OVERTIME REQUEST',
         content: `
@@ -9,9 +71,10 @@
             salario y gestiona las paradas de los camiones.</p>
 
             <div style="display: flex; flex-direction: columns; width: 90%; height: 150px; margin: 20px auto 0 auto; gap: 2%;">
-                <div style="background-color: grey; width: 47%; height: 100%; border-radius: 10px;
-                    cursor: pointer;"></div>
-                <div style="background-color: grey; image-repeat: no-repeat; width: 47%; height: 100%; border-radius: 10px;
+                <div style="aspect-ratio: 1 / 1; background-image: url('./src/OvertimeRequest/3.webp'); background-repeat: no-repeat;
+                    background-size: cover; width: 47%; height: 100%; border-radius: 10px; cursor: pointer;"></div>
+                <div style="aspect-ratio: 1 / 1; background-image: url('./src/OvertimeRequest/2.webp'); background-repeat: no-repeat;
+                    background-size: cover; background-position: center; object-fit: contain; width: 47%; height: 100%; border-radius: 10px;
                     cursor: pointer;"></div>
             </div>
             
@@ -26,8 +89,9 @@
                 <li>Envia actualizaciones automaticas al correo electronico</li>
             </ul>
 
-            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
-                cursor: pointer; margin: 25px auto 0 auto;"></div>
+            <div style="background-image: url('./src/OvertimeRequest/OvertimeRequest.webp'); background-repeat: no-repeat;
+                    background-size: contain; background-position: center; object-fit: contain;
+                width: 70%; height: 250px; border-radius: 15px; cursor: pointer; margin: 25px auto 0 auto;"></div>
             
             <h4>Tecnologías Utilizadas</h4>
             <ul>
@@ -95,8 +159,8 @@
                 <li>En caso de requerirse, los margenes y la impresora asi como las tipografias, se pueden editar desde el .json</li>
             </ul>
 
-            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
-                cursor: pointer; margin: 25px auto 0 auto;"></div>
+            <div style="background-image: url('/src/Etiquetas/etiquetas.webp'); background-size: contain;
+                background-repeat: no-repeat; width: 70%; height: 250px; border-radius: 10px; cursor: pointer; margin: 25px auto 0 auto;"></div>
 
             <h4>Tecnologías Usadas</h4>
             <ul>
@@ -125,68 +189,6 @@
 
             <h4>Duración del Proyecto</h4>
             <p>De 2 a 3 Semanas</p>
-        `
-    },
-
-    'Portafolio-Web': {
-        title: 'PORTAFOLIO WEB',
-        content: `
-            <h3>Portafolio de desarrollador</h3>
-            <h4>Descripción General</h4>
-            <p>
-            Aplicación web con diseño atractivo con el objetivo de mostrar a empresas y colaboradores las opciones de desarrollo
-            manejadas hasta el momento, tecnologias dominadas y proyectos interesantes, ademas de la ruta de conocimientos
-            y la trayectoria del desarrollador.
-            </p>
-
-            <div style="background-color: grey; width: 70%; height: 250px; border-radius: 10px;
-                cursor: pointer; margin: 25px auto 0 auto;"></div>
-            
-            <h4>Características Principales</h4>
-            <ul>
-                <li>Aplicacion web desarrollada en .NET 8</li>
-                <li>Muestra correctamente quien soy y en que proyectos he aportado</li>
-                <li>Usa interfaz atractiva, minimalista y obscura con animaciones atractivas</li>
-                <li>Opcion de crecimiento fácil a futuro </li>
-            </ul>
-            
-            <h4>Tecnologías Utilizadas</h4>
-            <ul>
-                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Proyecto:</span> .NET Core, .NET 8, Arquitectura
-                <span style="text-decoration: underline;">MVC</span></li>
-                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Backend:</span> JavaScript</li>
-                <li><span style="color: #bdc3c7; font-size: 1.2rem;">Frontend:</span> HTML5, CSS3</li>
-            </ul>
-
-            <div style="width: 100%; height: 35px; display: flex;
-                flex-direction: row; gap: 2%; justify-content: center; ">
-
-                    <!-- HTML5 -->
-                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#FF6B35" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
-                    </svg>
-
-                    <!-- CSS3 -->
-                    <svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#1572B6" d="M8.5 5l2.5 35.5L24 44l13-3.5L39.5 5z"/>
-                        <path fill="#33A9DC" d="M24 8v31.5l8.2-2.2 1.8-26.3z"/>
-                        <path fill="#FFFFFF" d="M33.1 13H24v4h4.9l-.3 4H24v4h4.4l-.3 4.5-4.1 1.4v4.2l7.9-2.6.7-11.5z"/>
-                        <path fill="#EBEBEB" d="M24 13v4h-5l-.3-4zm-5.5 9l.2 4H24v-4zm.4 6h-4l.3 5.5 7.9 2.6v-4.2l-4.1-1.4z"/>
-                    </svg>
-
-                    <!-- JavaScript -->
-                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
-                    </svg>
-
-                    <!-- GitHub -->
-                    <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#FFFFFF" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                    </svg>
-            </div>
-            
-            <h4>Duración del Proyecto</h4>
-            <p>1 Mes</p>
         `
     },
 
@@ -319,8 +321,8 @@
         title: 'DAIKIN MANUFACTURING MEXICO',
         content: `
 
-            <div style="background-color: grey; width: 20%; height: 50px; border-radius: 10px;
-                cursor: pointer; margin: 10px auto 25px 50px;"></div>
+            <div style="background-image: url('/src/Daikin/logo.webp'); background-size: contain; background-repeat: no-repeat;
+                width: 25%; height: 50px; border-radius: 10px; margin: 10px auto 25px 50px;"></div>
             
             <h3>IT Trainee</h3>
 
@@ -363,6 +365,11 @@
     'College': {
         title: 'INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN',
         content: `
+
+            <div style="background-image: url('/src/College/utan-logo.webp'); background-size: contain; background-repeat: no-repeat;
+                margin: 10px 0 10px 25px; width: 40%; height: 75px;"></div>
+
+
             <h3>Universidad Tangamanga</h3>
             <h4>Período</h4>
             <p><span style="color: #bdc3c7;">05/2022 - 09/2025</span></p>
@@ -406,6 +413,9 @@
     'Smart-Teaching': {
         title: 'SMART TEACHING',
         content: `
+            <div style="background-image: url('/src/Smart_teaching/logo.webp'); background-size: contain; background-repeat: no-repeat;
+                margin: 10px 0 10px 25px; width: 40%; height: 75px;"></div>
+
             <h3>Preparación para TOEFL Test B2</h3>
             <h4>Período</h4>
             <p><span style="color: #bdc3c7;">05/2025 - 11/2025</span></p>
